@@ -101,6 +101,6 @@ ALTER TABLE vendas CHANGE ativo ativo CHAR(1);
 -- Crie um usuario no SGB com seu nome proprio
 CREATE USER 'marina'@'localhost' IDENTIFIED BY 'SenhaForteAqui123';
 
---Conceda a esse usuário permissões de CRUD (Create, Read, Update, Delete) para todas as tabelas
+-- Conceda a esse usuário permissões de CRUD (Create, Read, Update, Delete) para todas as tabelas
 GRANT SELECT, INSERT, UPDATE, DELETE ON lojinha.* TO 'marina'@'localhost';
 FLUSH PRIVILEGES;
