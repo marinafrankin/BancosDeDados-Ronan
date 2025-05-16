@@ -43,7 +43,7 @@ SELECT nome, email, celular, ... FROM nome_tabela;
 -- Aplicando condições
 SELECT * FROM nome_tabela WHERE salario > 5000;
 SELECT * FROM tabela WHERE nome = "José" AND cidade = "Jaú";
-SELECT * FROM tabela WHERE nome = "José" OR nome = "João";
+SELECT * FROM tabela WHERE nome = "José" OR nome LIKE "João";
 
 -- Ordanando resultados
 SELECT * FROM tabela ORDER BY nome ASC;

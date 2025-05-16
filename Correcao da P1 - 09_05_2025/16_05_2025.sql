@@ -12,3 +12,18 @@ genero, ativo)
     '300', 'apartamento', 'Jardim Jorge Atala', 'Jau', 'SP', 'F', 'S');
     
 SELECT * FROM usuarios;
+
+SELECT criado_em, nome, email, celular FROM usuarios;
+
+SELECT 
+	criado_em AS "Data de Cadastro", 
+	nome AS nome_completo, 
+    cpf 
+FROM usuarios;
+SELECT * FROM usuarios WHERE nome LIKE "Maria%";
+SELECT * FROM usuarios WHERE nome LIKE "Marina%";
+SELECT * FROM usuarios WHERE nome LIKE "%Frankin";
+
+SELECT * FROM usuarios WHERE email LIKE "%marina%";
+
+SELECT * FROM usuarios WHERE deletado_em IS NULL;
